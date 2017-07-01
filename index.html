@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Let all browser to run high speed renderer -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Wikipedia Search Box</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Scope+One" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="container">
+        <h1>Wikipedia Search Box</h1></header>
+    <section class="container">
+        <form action="javascript:;" class="searchbar">
+            <div class="searchTxt">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" id="searchTxtContent" placeholder="Some keywords...">
+            </div>
+            <div class="btns">
+                <a class="btn btn-default" id="randomBtn" href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Random</a>
+                <button type="button" class="btn btn-primary" id="searchBtn">Search Wiki</button>
+            </div>
+        </form>
+    </section>
+    <section class="container search-result">
+        <p class="loading">loading search result...</p>
+        <div class="grid row" id="searchResult">
+        	<div class="grid-sizer col-md-4"></div>
+        </div>
+    </section>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/masonry/4.2.0/masonry.pkgd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
