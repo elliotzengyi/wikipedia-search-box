@@ -30,6 +30,8 @@ $(document).ready(function() {
 
         if (searchVal) {
 
+            $("h1").addClass("hideh1");
+
             $grid.masonry('remove', $(".grid-item")).masonry('layout');
 
             $.ajax({
@@ -57,9 +59,6 @@ $(document).ready(function() {
             searchWiki();
         }
     });
-
-
-
 
     var $grid = $('.grid').masonry({
         // set itemSelector so .grid-sizer is not used in layout
