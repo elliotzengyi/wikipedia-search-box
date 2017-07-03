@@ -122,6 +122,15 @@ h1 {
     -webkit-transform: scale(1.05, 1.05);
             transform: scale(1.05, 1.05);
 }
+.grid-item a:hover .panel-heading {
+    color: #fff;
+    background-color: #286090 !important;
+    border-color: #204d74 !important;
+}
+.grid-item a:hover .panel-body {
+    background-color: #ecf4f7 !important;
+    border-color: #286090 !important;
+}
 
 .grid-item a:hover .panel:after {
     opacity: 1;
