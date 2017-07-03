@@ -10,7 +10,7 @@ $(document).ready(function() {
 
             for (var i in list) {
 
-                htmlval = "<div class='grid-item col-md-4' id='list" + (i + 1) + "'><a href='https://en.wikipedia.org/wiki/" + list[i].title + "' target='_blank'><div class='panel panel-default'>";
+                htmlval = "<div class='grid-item col-md-4 col-sm-6 col-xs-12' id='list" + (i + 1) + "'><a href='https://en.wikipedia.org/wiki/" + list[i].title + "' target='_blank'><div class='panel panel-default'>";
                 htmlval += "<div class='panel-heading'>" + list[i].title + "</div>";
                 htmlval += "<div class='panel-body'" + list[i].snippet + "...</div>";
                 htmlval += "</div></a></div>";

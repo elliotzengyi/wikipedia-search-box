@@ -136,15 +136,30 @@ h1.hideh1 {
 }
 .grid-item a:hover .panel-body {
     background-color: #ecf4f7 !important;
-    border-color: #286090 !important;
 }
 
 .grid-item a:hover .panel:after {
     opacity: 1;
 }
-.grid-item a:active .panel:after,
-.grid-item a:visited .panel:after {
-    opacity: 0;
+
+@media screen and (max-width: 800px) {
+    .grid-item a:hover .panel {
+        top: 0;
+        z-index: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+    .grid-item a:hover .panel-heading {
+        color: #333;
+        background-color: #f5f5f5 !important;
+        border-color: #ddd !important;
+    }
+    .grid-item a:hover .panel-body {
+        background-color: #fff !important;
+    }
+    .grid-item a:hover .panel:after {
+        opacity: 0;
+    }
 }
 
 #searchResult {
